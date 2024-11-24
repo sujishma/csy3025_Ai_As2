@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Recognition</h1>
+
+        <!-- Image Upload Section -->
+        <h2>Upload Image</h2>
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="uploadImageBtn">Predict Emotion</button>
+        <p id="result"></p>
+
+        <!-- Live Camera Feed Section -->
+        <h2>Live Camera Feed</h2>
+        <video id="liveVideo" autoplay muted></video>
+        <button id="capturePredictBtn">Capture & Predict</button>
+        <p id="liveResult"></p>
+    </div>
+
+    <script src="/static/script.js" defer></script>
+</body>
+</html>
